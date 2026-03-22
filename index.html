@@ -77,7 +77,53 @@
                
                  
   
-                 
+                 <style>
+  /* This creates the moving color effect */
+  @keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  .animated-bg {
+    /* Soft colors like cream and chocolate */
+    background: linear-gradient(-45deg, #fff5e6, #fde2e4, #fff9f0, #f8edeb);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .menu-card {
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent */
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+    width: 320px;
+  }
+</style>
+
+<div class="animated-bg">
+  <div class="menu-card">
+    <h2 style="color: #5d4037; text-align: center;">🍰 Cake Specials</h2>
+    <hr style="border: 0.5px solid #eee;">
+    
+    <div style="display: flex; justify-content: space-between; padding: 10px 0;">
+      <span>Chocolate Ice Cake</span>
+      <strong>Rs 350</strong>
+    </div>
+    
+    <div style="display: flex; justify-content: space-between; padding: 10px 0;">
+      <span>Rasmalai Ice Cake</span>
+      <strong>Rs 400</strong>
+    </div>
+  </div>
+</div>
+
                  
                  
                  
